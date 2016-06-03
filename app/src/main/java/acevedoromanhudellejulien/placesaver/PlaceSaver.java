@@ -1,5 +1,7 @@
 package acevedoromanhudellejulien.placesaver;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,9 +10,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 public class PlaceSaver extends AppCompatActivity {
-
+    ImageButton b1;
+    ImageButton b2;
+    ImageButton b3;
+    ImageButton b4;
+    ImageButton b5;
+    ImageButton b6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,9 +28,20 @@ public class PlaceSaver extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+        b1 =(ImageButton)findViewById(R.id.mm_b_1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            firstPage();
+            }
+        });
 
     }
-
+    public void firstPage(){
+        b1.setColorFilter(Color.argb(255, 255, 255, 255));
+        Intent intent = new Intent(this, SaveAPlace.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -31,73 +31,96 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/mm_b_1"
-            android:minHeight="120dp"
-            android:minWidth="120dp"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
             android:layout_alignParentStart="true"
 
-            android:background="@android:drawable/ic_menu_add" />
+            android:background="@android:drawable/ic_menu_add"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/mm_b_2"
-            android:minHeight="120dp"
-            android:minWidth="120dp"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="true"
 
-            android:layout_toRightOf="@+id/mm_b_1"/>
+
+            android:layout_toRightOf="@+id/mm_b_1"
+            android:background="@android:drawable/ic_menu_mapmode"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/mm_b_3"
-            android:minHeight="120dp"
-            android:minWidth="120dp"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="true"
 
-            android:layout_toRightOf="@+id/mm_b_2"/>
+
+            android:layout_below="@+id/mm_b_1"
+            android:background="@android:drawable/ic_menu_send"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/mm_b_4"
-            android:minHeight="120dp"
-            android:minWidth="120dp"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="true"
 
-            android:layout_toRightOf="@+id/mm_b_3"/>
+            android:layout_below="@+id/mm_b_2"
+            android:layout_toRightOf="@+id/mm_b_3"
+            android:background="@android:drawable/ic_menu_compass"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/mm_b_5"
-            android:minHeight="120dp"
-            android:minWidth="120dp"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="true"
 
-            android:layout_toRightOf="@+id/mm_b_4"/>
+
+            android:layout_below="@+id/mm_b_3"
+            android:background="@android:drawable/ic_menu_preferences"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/mm_b_6"
-            android:minHeight="120dp"
-            android:minWidth="120dp"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
             android:layout_alignParentTop="false"
             android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="true"
 
-            android:layout_toRightOf="@+id/mm_b_5"/>
+            android:layout_below="@id/mm_b_4"
+            android:layout_toRightOf="@+id/mm_b_5"
+            android:background="@android:drawable/ic_notification_clear_all"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true" />
 
     </RelativeLayout>
 
